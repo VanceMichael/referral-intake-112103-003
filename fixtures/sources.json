@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"source_id": "visit-001", "record_kind": "visit", "collected_at": "2026-09-08T08:41:00+08:00", "payload": {"patient_ref": "P-SYN-14", "visit_id": "V-4401", "department": "肝病门诊", "state": "seen"}},
+    {"source_id": "exam-771", "record_kind": "exam_report", "collected_at": "2026-09-08T09:02:00+08:00", "payload": {"patient_ref": "P-SYN-14", "visit_id": "V-4401", "report_id": "R-771", "revision": 1, "finding_code": "BP-HIGH", "state": "final"}},
+    {"source_id": "referral-290", "record_kind": "referral", "collected_at": "2026-09-08T09:15:00+08:00", "payload": {"referral_id": "RF-290", "visit_id": "V-4401", "from_department": "肝病门诊", "to_department": "心血管内科", "state": "sent"}},
+    {"source_id": "cashier-24", "record_kind": "fee_receipt", "collected_at": "2026-09-08T09:17:00+08:00", "payload": {"visit_id": "V-4401", "receipt_id": "RC-24", "fee_kind": "initial_registration", "state": "settled"}},
+    {"source_id": "referral-291", "record_kind": "referral", "collected_at": "2026-09-08T09:36:00+08:00", "payload": {"referral_id": "RF-290", "visit_id": "V-4401", "to_department": "心血管内科", "state": "accepted", "revision": 2}}
+  ]
+}
