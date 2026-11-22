@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {"source_id": "d-visit-01", "record_kind": "visit", "collected_at": "2026-10-12T08:30:00+08:00", "payload": {"patient_ref": "P-SYN-21", "visit_id": "V-5502", "department": "消化内科", "state": "seen"}},
+    {"source_id": "d-fee-01", "record_kind": "fee_receipt", "collected_at": "2026-10-12T08:31:00+08:00", "payload": {"visit_id": "V-5502", "receipt_id": "RC-88", "fee_kind": "initial_registration", "state": "settled"}},
+    {"source_id": "d-exam-01", "record_kind": "exam_report", "collected_at": "2026-10-12T09:05:00+08:00", "payload": {"patient_ref": "P-SYN-21", "visit_id": "V-5502", "report_id": "R-100", "revision": 1, "finding_code": "BP-HIGH", "state": "final"}},
+    {"source_id": "d-ref-01", "record_kind": "referral", "collected_at": "2026-10-12T09:20:00+08:00", "payload": {"referral_id": "RF-01", "visit_id": "V-5502", "from_department": "消化内科", "to_department": "心血管内科", "state": "sent", "requires": ["R-100", "R-101"]}},
+    {"source_id": "d-ref-02", "record_kind": "referral", "collected_at": "2026-10-12T09:22:00+08:00", "payload": {"referral_id": "RF-02", "visit_id": "V-5502", "from_department": "消化内科", "to_department": "内分泌科", "state": "sent", "requires": ["R-100"]}},
+    {"source_id": "d-ref-03", "record_kind": "referral", "collected_at": "2026-10-12T09:25:00+08:00", "payload": {"referral_id": "RF-03", "visit_id": "V-5502", "from_department": "消化内科", "to_department": "骨科", "state": "sent", "requires": ["R-100"]}},
+    {"source_id": "d-ref-04", "record_kind": "referral", "collected_at": "2026-10-12T09:28:00+08:00", "payload": {"referral_id": "RF-04", "visit_id": "V-5502", "from_department": "消化内科", "to_department": "皮肤科", "state": "sent", "requires": ["R-100"]}},
+    {"source_id": "d-slot-01", "record_kind": "slot_update", "collected_at": "2026-10-12T09:26:00+08:00", "payload": {"visit_id": "V-5502", "referral_id": "RF-01", "department": "心血管内科", "action": "reserve", "slot_id": "S-301"}},
+    {"source_id": "d-fee-02", "record_kind": "fee_receipt", "collected_at": "2026-10-12T09:27:00+08:00", "payload": {"visit_id": "V-5502", "receipt_id": "RC-89", "fee_kind": "referral_consult", "referral_id": "RF-02", "state": "settled"}},
+    {"source_id": "d-ref-02b", "record_kind": "referral", "collected_at": "2026-10-12T09:40:00+08:00", "payload": {"referral_id": "RF-02", "visit_id": "V-5502", "to_department": "内分泌科", "state": "accepted", "revision": 2}},
+    {"source_id": "d-ref-04b", "record_kind": "referral", "collected_at": "2026-10-12T09:45:00+08:00", "payload": {"referral_id": "RF-04", "visit_id": "V-5502", "to_department": "皮肤科", "state": "accepted", "revision": 2}},
+    {"source_id": "d-slot-04", "record_kind": "slot_update", "collected_at": "2026-10-12T09:46:00+08:00", "payload": {"visit_id": "V-5502", "referral_id": "RF-04", "department": "皮肤科", "action": "reserve", "slot_id": "S-302"}},
+    {"source_id": "d-exam-01b", "record_kind": "exam_report", "collected_at": "2026-10-12T10:05:00+08:00", "payload": {"patient_ref": "P-SYN-21", "visit_id": "V-5502", "report_id": "R-100", "revision": 2, "finding_code": "BP-BORDERLINE", "state": "final"}},
+    {"source_id": "d-ref-03b", "record_kind": "referral", "collected_at": "2026-10-12T10:20:00+08:00", "payload": {"referral_id": "RF-03", "visit_id": "V-5502", "to_department": "骨科", "state": "rejected", "revision": 2, "reason": "建议先完成动态血压监测"}},
+    {"source_id": "d-ref-04c", "record_kind": "referral", "collected_at": "2026-10-12T11:00:00+08:00", "payload": {"referral_id": "RF-04", "visit_id": "V-5502", "to_department": "皮肤科", "state": "no_show", "revision": 3}}
+  ]
+}
